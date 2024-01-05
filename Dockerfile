@@ -34,7 +34,7 @@ RUN ls -al /app/gradle
 RUN ./gradlew clean build
 
 # Expose the port that the application will run on
-EXPOSE 8761
+EXPOSE 443
 
 # Set the entry point to run the application
 CMD ["/app/gradlew", "bootRun"]
